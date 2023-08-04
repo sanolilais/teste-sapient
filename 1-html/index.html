@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Pagina Inicial</title>
 </head>
+
 <body>
     <header>
         <nav class="navbar">
@@ -16,19 +18,75 @@
                 <li class="navbar__item"><a href="#">Pessoas</a></li>
                 <li class="navbar__item"><a href="#">Cases</a></li>
             </ul>
-            <img class="navbar__img" src="./assets/img/imagem-2.png" alt="logo-navbar">
+            <div class="socialmedia">
+                <ul class="socialmedia__icons">
+                    <a href="#">
+                        <img src="./assets/img/linkedin.svg" width="20px" height="20px" alt="icone Linkedin">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/img/facebook.svg" width="20px" height="20px" alt="Icone Facebook">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/img/instagram.svg" width="20px" height="20px" alt="Icone instagram">
+                    </a>
+                    <a href="#">
+                        <img src="./assets/img/medium.svg" width="20px" height="20px" alt="Icone Medium">
+                    </a>
+                </ul>
+            </div>
+            <button class="btn__hamburger">
+                <i class="fa-sharp fa-solid fa-bars" alt="icone para abrir o menu" width="400px" height="20px"></i>
+            </button>
+            <button class="btn__hamburger-close">
+                <i class="fa-sharp fa-solid fa-xmark" alt="icone para fechar o menu"></i>
+            </button>
+            <a href="#">
+                <img class="navbar__img" src="./assets/img/imagem-2.png" alt="logo navbar">
+            </a>
+            <button class="btn__hamburger-close">
+                <i class="fa-sharp fa-solid fa-xmark" alt="icone para fechar o menu"></i>
+            </button>
+            <form class="searchbox">
+                <input type="search" placeholder="Digite o que deseja buscar" size="40px">
+            </form>
+            </div>
         </nav>
     </header>
     <section class="content-body">
         <h1>Olá mundo!</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </p> 
-        <video src="./assets/video/video.mp4" controls ></video>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum." </p>
+        <video src="./assets/video/video.mp4" controls></video>
     </section>
     <blockquote>
-        <q> Lorem ipsum dolor sit amet consectetur volutpat. UTI.</q>
+        <q> Lorem ipsum dolor sit amet consectetur volutpat. UTI</q>
     </blockquote>
+    <section class="image-gallery">
+        <h2>Galeria de imagens</h2>
+        <div class="carousel-container">
+            <img src="./assets/img/imagem-1.png" alt="Primeira Imagem">
+        </div>
+        <i class="fa-regular fa-circle"></i>
+        <i class="fa-solid fa-circle"></i>
+        <i class="fa-solid fa-circle"></i>
+    </section>
+    <section class="accordion-container">
+        <h3>LOREM IPSUM DOLOR SIT</h3>
+        <button class="accordion__close-btn"><i class="fa-solid fa-minus"></i></button>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            doloremagna aliqua. Ut enim ad minim</p>
+        <h3>LOREM IPSUM DOLOR SIT</h3>
+        <button class="accordion__open-btn"><i class="fa-solid fa-plus"></i></button>
+        <h3>LOREM IPSUM DOLOR SIT</h3>
+        <button class="accordion__open-btn"><i class="fa-solid fa-plus"></i></button>
+        <h3>LOREM IPSUM DOLOR SIT</h3>
+        <button class="accordion__open-btn"><i class="fa-solid fa-plus"></i></button>
+        <h3>LOREM IPSUM DOLOR SIT</h3>
+        <button class="accordion__open-btn"><i class="fa-solid fa-plus"></i></button>
+    </section>
 </body>
 </html>
