@@ -12,6 +12,7 @@
     <header>
         <nav class="navbar">
             <ul class="navbar__menu">
+            <!-- <ul class="navbar__menu navbar__menu--inactive"> -->
                 <li class="navbar__item"><a href="#">Quem somos</a></li>
                 <li class="navbar__item"><a href="#">Trabalhe conosco</a></li>
                 <li class="navbar__item"><a href="#">Pessoas</a></li>
@@ -34,16 +35,17 @@
                 </ul>
             </div>
             <button class="btn__hamburger">
-                <i class="fa-sharp fa-solid fa-bars" alt="icone para abrir o menu" width="400px" height="20px"></i>
-            </button>
-            <button class="btn__hamburger-close">
-                <i class="fa-sharp fa-solid fa-xmark" alt="icone para fechar o menu"></i>
+            <!-- <button class="btn__hamburger btn__hamburger--active"> -->
+                <i class="fa-sharp fa-solid fa-bars" width="400px" height="20px"></i>
+                <!-- <i class="fa-sharp fa-solid fa-xmark" alt="icone para abrir o menu" width="400px" height="20px"></i> -->
             </button>
             <a href="#">
                 <img class="navbar__img" src="./assets/img/imagem-2.png" alt="logo navbar">
             </a>
-            <button class="btn__hamburger-close">
-                <i class="fa-sharp fa-solid fa-xmark" alt="icone para fechar o menu"></i>
+            <button class="btn__search">
+            <!-- <button class="btn__search btn__search--active"> -->
+                <i class="fa-sharp fa-solid fa-search"></i>
+                <!-- <i class="fa-sharp fa-solid fa-xmark"></i> -->
             </button>
             <form class="searchbox">
                 <input type="search" placeholder="Digite o que deseja buscar" size="40px">
@@ -67,15 +69,26 @@
     <section class="image-gallery">
         <h2>Galeria de imagens</h2>
         <div class="carousel-container">
-            <img src="./assets/img/imagem-1.png" alt="Primeira Imagem">
+            <button class="carousel__previous">&#9654;</button>
+            <!-- a direção deste botão pode ser alterada com css-->
+            <div class="carousel">                
+                <img src="./assets/img/imagem-1.png" alt="Primeira Imagem">
+            </div>
+            <button class="carousel__next">&#9654;</button>
         </div>
-        <i class="fa-regular fa-circle"></i>
+        <i class="fa-solid fa-circle"></i>
+        <!-- <i class="fa-regular fa-circle"></i> -->
         <i class="fa-solid fa-circle"></i>
         <i class="fa-solid fa-circle"></i>
+        <!-- esses icones podem ter a classe alterada pelo Javascript -->
     </section>
     <section class="accordion-container">
         <h3>LOREM IPSUM DOLOR SIT</h3>
-        <button class="accordion__close-btn"><i class="fa-solid fa-minus"></i></button>
+        <button class="accordion__close-btn">
+            <i class="fa-solid fa-plus"></i>
+            <!-- <i class="fa-solid fa-minus"></i> -->
+            <!-- esse icone pode ter a classe alterada pelo Javascript -->
+        </button>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
             doloremagna aliqua. Ut enim ad minim</p>
         <h3>LOREM IPSUM DOLOR SIT</h3>
@@ -87,24 +100,26 @@
         <h3>LOREM IPSUM DOLOR SIT</h3>
         <button class="accordion__open-btn"><i class="fa-solid fa-plus"></i></button>
     </section>
-    <section class="partners-container">
+    <section class="partners">
         <h2>Parceiros</h2>
-        <i class="fa-sharp fa-solid fa-arrow-left"></i>
+        <button class="partner__previous">&#9654;</button>
+        <!-- a direção deste botão pode ser alterada com css-->
         <div class="carousel-container">
             <img src="./assets/img/imagem-2.png" alt=" Segunda imagem">
         </div>
-        <i class="fa-sharp fa-solid fa-arrow-right"></i>
+        <button class="partner__next">&#9654;</button>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt dignissimos laborum delectus eum repudiandae 
             expedita aliquam deserunt doloribus molestiae, laudantium quis cum, atque accusantium commodi facilis nisi.</p>
             <a href="#">Conheça mais</a>
-        <i class="fa-regular fa-circle"></i>
+        <i class="fa-solid fa-circle"></i>
+        <!-- <i class="fa-regular fa-circle"></i> -->
         <i class="fa-solid fa-circle"></i>
         <i class="fa-solid fa-circle"></i>
         <i class="fa-solid fa-circle"></i>
     </section>
-    <section class="contact-form">
+    <section class="contact">
         <h2>Entre em Contato</h2>
-        <form class="content__form">
+        <form class="contact__form">
             <span>Nome</span>
             <input type="text">
             <span>Email</span>
